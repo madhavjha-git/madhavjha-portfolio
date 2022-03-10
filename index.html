@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Madhav Jha - Personal Website and Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Madhav Jha - Software Developer">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700' type='text/css'>
+    <link rel='stylesheet' href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css" id="theme-style">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <script defer src="assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+    <div class="pre">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" width="30" height="30">
+
+            <rect fill="#FBBA44" width="15" height="15">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s"
+                    values="0,0;15,0;15,15;0,15;0,0;" repeatCount="indefinite" />
+            </rect>
+
+            <rect x="15" fill="#E84150" width="15" height="15">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s"
+                    values="0,0;0,15;-15,15;-15,0;0,0;" repeatCount="indefinite" />
+            </rect>
+
+            <rect x="15" y="15" fill="#62B87B" width="15" height="15">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s"
+                    values="0,0;-15,0;-15,-15;0,-15;0,0;" repeatCount="indefinite" />
+            </rect>
+
+            <rect y="15" fill="#2F6FB6" width="15" height="15">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s"
+                    values="0,0;0,-15;15,-15;15,0;0,0;" repeatCount="indefinite" />
+            </rect>
+        </svg>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bgcolor">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Madhav">
+            </a>
+
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <input class="checkbox" type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </nav>
+
+    <!--Hero -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-interval="5000" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="banner" class="banner" style="background-image: url('assets/images/background01.jpg')"></div>
+            </div>
+            <div class="carousel-item">
+                <div id="banner" class="banner" style="background-image: url('assets/images/background02.jpg')"></div>
+            </div>
+            <div class="carousel-item">
+                <div id="banner" class="banner" style="background-image: url('assets/images/background03.jpg')"></div>
+            </div>
+            <div class="carousel-caption">
+                <h1 class="name">Madhav Jha</h1>
+                <h2 class="desc">Software Engineer, Cloud Enthusiast</h2>
+                <h2 class="designation">Lead Technology at Synechron</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://linkedin.com/in/madhavjha14" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/madhavjha-git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.hackerrank.com/madhav_jha" target="_blank" rel="noopener noreferrer"><i class="fab fa-hackerrank"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/im_madhavjha" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I’m Madhav Jha, software engineer by profession, a bad guitar player and someone who loves mountains. Originally from Bihar,I grew up in Kolkata and currently based in Pune. <br><br>First I wanted to be a painter, then a cricketer
+                                and finally I got hooked to computers and ever since I just wanted to be a "Computer Engineer". I find my thrill in building something and seeing it work. <br><br>I'm a passionate, detailed-oriented, responsible, and committed
+                                professional, with a get-it-done, on-time, and high-quality product spirit. I have close to 7 years of experience defining requirements, designing, implementing, testing, and delivering complex back-end applications using
+                                a variety of programming languages and technologies. <br><br>Apart from work, I have been helping my friends and relatives go digital with their business. This gives me a chance to experiment and help people at the same
+                                time.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Lead Technology -
+                                    <span>
+                                        <a href="https://www.synechron.com/" target="_blank"
+                                            rel="noopener noreferrer">Synechron</a>
+                                    </span>
+                                    <span> (Sep 2015 - Present)</span>
+                                </h3>
+
+                                <h6><span class='notbold' style="font-weight: 100;">Synechron is a leading digital transformation consulting firm and is working to Accelerate Digital initiatives for banks, asset managers, and insurance companies around the world.</span></h6>
+                                <p>
+                                    • Responsible to collaborate with a major banking client, understand requirements, propose solutions, develop and deliver products for investment bankers which are rich in feature, reliable, efficient and scalable.
+                                </p>
+
+                            </div>
+                            <div class="item">
+                                <h3 class="title">Software Developer-
+                                    <span>
+                                        <a href="https://www.amdocs.com/" target="_blank"
+                                            rel="noopener noreferrer">Amdocs India</a>
+                                    </span>
+                                    <span> (Sep 2015 - Present)</span>
+                                </h3>
+
+                                <h6><span class='notbold' style="font-weight: 100;">Amdocs is a leading software and
+                                        service provider to communications and media companies.</span></h6>
+                                <p>
+                                    • Took ownership and accountability of billing and discounting applications, provided technical support and guidance during solution design for new requirements.
+                                    <br> • Led, architected, and participated in the design, development, testing and deployment of multiple projects over the years.<br> • Took an active role in technical mentoring within the team.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Freelance And No Profit Projects</h2>
+                        <div class="content">
+                            <div class="item row">
+                                <a class="col-sm-4" href="https://www.shineup.life/" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-fluid project-image" src="assets/images/shineup.png" alt="shineuplife" />
+                                </a>
+                                <div class="desc col-sm-8">
+                                    <h3 class="title"><a href="https://www.shineup.life/" target="_blank" rel="noopener noreferrer">ShineUpLife - An online yoga and wellness
+                                            portal</a></h3>
+                                    <p class="mb-2"> Developed for a friend to support her business during pandemic. This site has been developed on wordpress using custom template. Used woocommerce for ecommerce support. This was my first project in wordpress. It's live
+                                        and being used by hundreds of people. The site is now managed by some agency.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item row">
+                                <a class="col-sm-4" href="https://www.rlciit.com/" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-fluid project-image" src="assets/images/rlclogo.gif" alt="project name" />
+                                </a>
+                                <div class="desc col-sm-8">
+                                    <h3 class="title"><a href="https://www.rlciit.com/" target="_blank" rel="noopener noreferrer">RCLIIT - A computer training institute</a></h3>
+                                    <p class="mb-2">Developed this web application for my cousing who runs a computer training institute in a remote area of Bihar. People facing side of this application was quickly developed using Django, and management modules is being
+                                        built in Spring MVC with Java. The application provides a complete solution for any coaching/school. It includes front site management, student management, staff management, e-course module and online examination
+                                        module.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Personal Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://github.com/madhavjha-git/Django-RealEstate-Listing" target="_blank">Property Rental Website in Django</a>
+                                </h3>
+                                <p class="summary">Built this property rental website to sharpen my skills using Django, PostgreSQL, HTML, CSS, JavaScript and BootStrap.</p>
+                            </div>
+
+                            <a class="btn" href="https://github.com/madhavjha-git   " target="_blank" rel="noopener noreferrer">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!--                 <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Blogs</h2>
+                        <div class="content">
+                            <div class="item row">
+                                <a class="col-sm-4" href="post.html" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-fluid project-image" src="assets/images/blog-post-3.jpeg" alt="project name" />
+                                </a>
+
+                                <div class="desc col-sm-8">
+
+                                    <h3 class="title"><a href="post.html" target="_blank" rel="noopener noreferrer">A
+                                            Dummy Blog Title
+                                            Projects</a></h3>
+                                    <p class="mb-2">This is a dummy summary of a blog which I would write. This will be populated dynamically from backend. This is just a mock up.</p>
+                                    <footer class="post-footer d-flex align-items-center">
+                                        <div class="date"><i class="fas fa-history"></i> 1 months ago </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn" href="blogs.html">All Blogs <i class="fas fa-chevron-right pt-1"></i></a>
+                    </div>
+                </section> -->
+
+            </div>
+            <div class="secondary col-lg-4 col-12">
+                <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="sr-only">Location:</span>Pune, India
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="sr-only">Email:</span>madhavjha.cse@gmail.com
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-code"></i><span style="margin-left:5px; margin: bottom 5px;">
+                                    Java, Python, C/C++</span></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-database"></i><span style="margin-left:5px; margin: bottom 5px;">
+                                    SQL - Oracle, PostgreSQL</span></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-file"></i><span style="margin-left:5px; margin: bottom 5px;">
+                                    NoSQL - MongoDB, CouchBase </span></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-sitemap"></i><span style="margin-left:5px; margin: bottom 5px;">
+                                        Microservices</span></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-terminal"></i><span style="margin-left:5px; margin: bottom 5px;">
+                                        Shell Scripting</span></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-file-code"></i><span style="margin-left:5px; margin: bottom 5px;">
+                                        HTML,CSS, JS, BootStrap</span></li>
+                                </h3>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor of Technology</h3>
+                                <h4 class="university"> Computer Science & Engineering</h4>
+                                <h4 class="university">Guru Nanank Institute of Technology<br><span>(2011-2015)</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Full Professional Proficiency <br class="visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> </span>
+                                </li>
+                                <!--//item-->
+
+                                <li class="item">
+                                    <span class="title"><strong>Hindi:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> </span>
+                                </li>
+                                <!--//item-->
+
+                                <li class="item">
+                                    <span class="title"><strong>Bengali:</strong></span>
+                                    <span class="level">Bilingual Proficiency <br class="visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> </span>
+                                </li>
+                                <!--//item-->
+
+                                <li class="item">
+                                    <span class="title"><strong>Maithili:</strong></span>
+                                    <span class="level">Mother Tongue<br class="visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> </span>
+                                </li>
+                                <!--//item-->
+
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+
+                <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Interests</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <span style="margin-left:5px; margin: bottom 5px;"> Trekking</span></li>
+                                <li><i class="fas fa-book-open"></i><span style="margin-left:5px; margin: bottom 5px;">
+                                        Reading</span></li>
+                                <li><i class="fas fa-theater-masks"></i><span style="margin-left:5px; margin: bottom 5px;"> Art & Culture</span></li>
+                                <li><i class="fas fa-code"></i><span style="margin-left:5px; margin: bottom 5px;">
+                                        Problem Solving</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+
+                <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Favourite Books</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-heart"></i> <span style="margin-left:5px; margin: bottom 5px;"> The
+                                        Alchemist</span></li>
+                                <li><i class="fas fa-heart"></i> <span style="margin-left:5px; margin: bottom 5px;"> The
+                                        Monk Who Sold His Ferrari</span></li>
+                                <li><i class="fas fa-heart"></i> <span style="margin-left:5px; margin: bottom 5px;">
+                                        Autobiography of A Yogi</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section-->
+    <section class="gallery no-padding">
+        <div class="row">
+            <div class="mix col-lg-3 col-md-3 col-sm-6">
+                <div class="item">
+                    <a href="assets/images/photography/kufri.jpg" data-lightbox="gallery">
+                        <div>
+                            <img src="assets/images/photography/kufri.jpg" alt="" class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mix col-lg-3 col-md-3 col-sm-6">
+                <div class="item">
+                    <a href="assets/images/photography/birthi.jpg" data-lightbox="gallery">
+                        <div>
+                            <img src="assets/images/photography/birthi.jpg" alt="" class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mix col-lg-3 col-md-3 col-sm-6">
+                <div class="item">
+                    <a href="assets/images/photography/ValleyOfFlowers.jpg" data-lightbox="gallery">
+                        <div>
+                            <img src="assets/images/photography/ValleyOfFlowers.jpg" alt="" class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mix col-lg-3 col-md-3 col-sm-6">
+                <div class="item">
+                    <a href="assets/images/photography/MontrealTower.jpg" data-lightbox="gallery">
+                        <div>
+                            <img src="assets/images/photography/MontrealTower.jpg" alt="" class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer py-4 bg-primary text-white text-center">
+        <p>Loved this Template? You are free to use anyway you want. <a href="https://github.com/madhavjha-git">Github
+                link</a><span class="love">&hearts;</span></p>
+        <p>Copyright &copy;<span class="year"></span> Madhav Jha</p>
+        <ul class="social list-inline">
+            <li class="list-inline-item"><a href="https://linkedin.com/in/madhavjha14" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/madhavjha-git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.hackerrank.com/madhav_jha" target="_blank" rel="noopener noreferrer"><i class="fab fa-hackerrank"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/im_madhavjha" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+
+
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i
+            class="fas fa-arrow-up"></i></a>
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+    </script>
+</body>
+
+</html>
