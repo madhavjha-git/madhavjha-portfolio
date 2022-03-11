@@ -363,40 +363,25 @@ a:focus {
     color: var(--secondary-color);
 }
 
-.carousel {
-    height: 800px;
-    width: 100%;
-}
-
 
 /* Banner */
 
 .banner {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 800px;
+    height: 900px;
     width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-    .carousel {
-        height: 600px;
-        width: 100%;
-    }
+@media(max-width:640px) {
     .banner {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
         background-position: center right;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 600px;
+        height: 480px;
         width: 100%;
     }
 }
@@ -408,6 +393,8 @@ a:focus {
     opacity: 0;
     transition-duration: 2s;
     transition-property: opacity;
+    height: 500px;
+    width: 100%;
 }
 
 .carousel-fade .carousel-item.active,
