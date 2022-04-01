@@ -367,19 +367,6 @@ a:focus {
     width: 100%;
 }
 
-@media(max-width:640px) {
-    .carousel {
-        height: 400px;
-    }
-    .banner {
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        height: 400px;
-    }
-}
-
 
 /* Caraousel section */
 
@@ -530,26 +517,35 @@ a:focus {
         padding-right: 10px;
         padding-top: 0px;
         padding-bottom: 0px;
-        margin-bottom: 10px;
+        margin-bottom: -10px;
         right: auto;
         text-align: left;
-        left: 50%;
+        left: 10%;
         background-color: rgba(27, 72, 155, 0.397);
     }
     .carousel-caption .name {
         color: #ffffff;
-        font-size: 30px;
+        font-size: 20px;
         margin-bottom: 5px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .carousel-caption .desc {
         font-family: "Lato", arial, sans-serif;
         font-weight: 400;
         color: #ffffff;
         ;
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 0;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+    }
+    .carousel-caption .designation {
+        font-family: "Lato", arial, sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        ;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 5px;
     }
     .carousel-caption .social a {
         background: #10284e;
