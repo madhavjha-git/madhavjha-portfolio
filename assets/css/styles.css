@@ -468,6 +468,10 @@ a:focus {
 /*responsive css*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        z-index: -1!important;
+    }
     .carousel-caption {
         padding-left: 10px;
         padding-right: 50px;
@@ -512,6 +516,10 @@ a:focus {
 }
 
 @media only screen and (max-width: 767px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        z-index: -1!important;
+    }
     .carousel-caption {
         padding-left: 10px;
         padding-right: 10px;
@@ -521,7 +529,7 @@ a:focus {
         right: auto;
         text-align: left;
         left: 10%;
-        background-color: rgba(27, 72, 155, 0.397);
+        background-color: rgba(42, 42, 43, 0.397);
     }
     .carousel-caption .name {
         color: #ffffff;
