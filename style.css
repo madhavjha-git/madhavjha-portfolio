@@ -1,0 +1,164 @@
+        /* Custom font for a modern, clean look */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            /* Lighter, subtle background */
+            color: #2d3748;
+            /* Darker grey text for contrast */
+        }
+
+        /* Custom styles for section titles with a modern underline */
+        .section-title {
+            position: relative;
+            padding-bottom: 0.75rem;
+            margin-bottom: 3rem;
+            display: inline-block;
+            /* To make the underline fit the text */
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            /* Center the underline */
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 80px;
+            /* Wider underline */
+            height: 5px;
+            /* Thicker underline */
+            background: linear-gradient(to right, #6366f1, #3b82f6);
+            /* Gradient underline */
+            border-radius: 9999px;
+            opacity: 0.8;
+        }
+
+        /* Card styling with subtle gradient and better shadow */
+        .card {
+            background: linear-gradient(145deg, #ffffff, #f0f2f5);
+            border-radius: 1.25rem;
+            /* More rounded corners */
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.05), -8px -8px 16px rgba(255, 255, 255, 0.5);
+            /* Neumorphic-like shadow */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            /* More pronounced lift effect */
+            box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.1), -12px -12px 24px rgba(255, 255, 255, 0.6);
+        }
+
+        /* Primary button with gradient and animation */
+        .btn-primary {
+            background-image: linear-gradient(to right, #6366f1 0%, #3b82f6 100%);
+            /* Blue-indigo gradient */
+            color: white;
+            padding: 0.9rem 2.2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-primary:hover {
+            background-position: right center;
+            /* Move gradient on hover */
+            box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Secondary button with border and subtle fill on hover */
+        .btn-secondary {
+            background-color: transparent;
+            color: #6366f1;
+            border: 2px solid #6366f1;
+            padding: 0.9rem 2.2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-secondary:hover {
+            background-color: #6366f1;
+            color: white;
+            box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive image styling */
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            /* More rounded corners for images */
+            object-fit: cover;
+        }
+
+        /* Animation for fade in up */
+        @keyframes fadeInMoveUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInMoveUp 0.6s ease-out forwards;
+            opacity: 0;
+            /* Hidden by default */
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        /* Icon styling */
+        .icon-lg {
+            width: 3.5rem;
+            /* Larger icons */
+            height: 3.5rem;
+            color: #3b82f6;
+            /* Consistent blue accent */
+            margin-bottom: 1rem;
+        }
+
+        /* Hero background effect (optional, can be replaced by a simple gradient) */
+        .hero-bg-effect {
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle at top left, rgba(67, 97, 238, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at bottom right, rgba(238, 67, 206, 0.05) 0%, transparent 50%);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        /* Form input focus styling */
+        input:focus,
+        textarea:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
