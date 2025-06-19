@@ -368,34 +368,54 @@
                 </h2>
                 <div class="mt-16 max-w-2xl mx-auto card p-8 md:p-12 animate-fade-in-up">
                     <p class="text-lg text-gray-700 text-center mb-10">
-                        I'm excited to explore new opportunities, collaborations, and discussions. Don't hesitate to
-                        reach out!
+                        I'm excited to explore new opportunities, collaborations, and discussions. Please don't hesitate
+                        to reach out!
                     </p>
-                    <form class="space-y-8">
+                    <!-- Formspree Integration Example -->
+                    <form id="contactForm" action="https://formspree.io/f/myzjpazr" method="POST" class="space-y-8">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-semibold text-lg mb-2">Your Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full p-4 border border-gray-300 rounded-lg text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                                placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-semibold text-lg mb-2">Your Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full p-4 border border-gray-300 rounded-lg text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                                placeholder="john.doe@example.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-semibold text-lg mb-2">Your
+                                Message</label>
+                            <textarea id="message" name="message" rows="7"
+                                class="w-full p-4 border border-gray-300 rounded-lg text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                                placeholder="Type your message here..." required></textarea>
+                        </div>
                         <div class="text-center">
-                            <button type="submit" class="btn-primary inline-block w-full sm:w-auto">
-                                <a href="mailto:madhavjha.dev@gmail.com">Say Hello</a>
+                            <button type="submit"
+                                class="btn-primary inline-block w-full sm:w-auto flex items-center justify-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                                </svg>
+                                <span>Send Message</span>
                             </button>
                         </div>
                     </form>
+                    <div id="form-messages" class="message-box" style="display: none;"></div>
+
                     <div class="mt-12 text-center text-gray-600">
                         <p class="text-lg mb-4">Find me on other platforms:</p>
                         <div class="flex justify-center space-x-8 mt-4">
                             <!-- LinkedIn Icon -->
                             <a href="https://linkedin.com/in/madhavjha14" target="_blank"
                                 class="text-gray-700 hover:text-blue-700 transition duration-200 transform hover:scale-110">
-                                <!-- <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 8h-2.923c-.66 0-1.077.58-1.077 1.25v2.25H16v3h-3.923v7.25h-4.077V14.5h-2.923v-3h2.923v-2.25c0-1.89 1.11-3.69 3.23-3.69h2.923V8z"></path>
-                                    <circle cx="8" cy="4" r="2"></circle>
-                                </svg> -->
                                 <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" class="w-10 h-10">
                             </a>
                             <!-- GitHub Icon -->
                             <a href="https://github.com/madhavjha-git" target="_blank"
                                 class="text-gray-700 hover:text-gray-900 transition duration-200 transform hover:scale-110">
-                                <!-- <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577V20.55c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.232 1.838 1.232 1.07 1.83 2.807 1.302 3.492.997.107-.775.418-1.302.762-1.602-2.665-.3-5.466-1.33-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.3-2.651-11.334.234-11.66 2.238.163 3.668 1.488 4.604 2.336.78-.216 1.606-.324 2.429-.324.823 0 1.65.108 2.429.324.936-.848 2.366-2.173 4.604-2.336 2.885.326.361 11.36 234 11.66.768.84 1.236 1.911 1.236 3.221 0 4.61-2.801 5.625-5.476 5.922.429.369.812 1.104.812 2.219v3.293c0 .319.192.694.8 3.578C20.56 22.186 24 17.697 24 12c0-6.627-5.373-12-12-12z"></path>
-                                </svg> -->
                                 <img src="assets/images/github-icon-1-logo-svgrepo-com.svg" alt="Github Logo"
                                     class="w-10 h-10">
                             </a>
@@ -405,7 +425,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
